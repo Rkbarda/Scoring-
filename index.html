@@ -8,9 +8,51 @@
      <script src="https://cdn.tailwindcss.com" defer></script>
 </head>
 <body>
-    <div class="flex justify-center items-center h-screen w-full">
-        <h1 class="bg-red-300 p-2 rounded-md">TESTING</h1>
+  <div class="container flex flex-col justify-center items-center w-full h-screen">
+    <div class="top-container flex flex-col w-full h-3/6 bg-gray-50">
+        <div class="screen  h-full flex flex-col justify-center bg-white m-3 shadow-sm rounded-lg items-center text-gray-600">
+            <p class="text-4xl ">
+                <span class="">4</span>
+                <span class="">/</span>
+                <span class="">1</span>
+
+            </p>
+            <p class="toss">variable won the toss and elected to field</p>
+        </div>
+        <div class="player-container flex justify-center h-2/6">
+            <div class="player-right-container basis-3/6 flex flex-col justify-center items-center bg-white ml-3 mr-0.5 mb-2 shadow-sm rounded-lg">
+                <span class="px-3">Player 1 Name</span>
+                <p>
+                    <span class="">0</span>
+                    <span class="">(0)</span>
+                </p>
+            </div>
+            <div class="player-right-container basis-3/6 flex flex-col justify-center items-center bg-white mr-3 ml-0.5 mb-2 shadow-sm rounded-lg">
+                <span class="px-3">Player 2 Name</span>
+                <p>
+                    <span class="">0</span>
+                    <span class="">(0)</span>
+                </p>
+            </div>
+        </div>
     </div>
+
+    <div class="bottom-container h-3/6 w-full grid grid-cols-4 grid-rows-4 bg-gray-50 p-1 text-lg">
+        <button class="key p-4 m-1 rounded-md hover:bg-gray-300 bg-gray-200 font-medium">0</button>
+        <button class="key p-4 m-1 rounded-md hover:bg-gray-300 bg-gray-200 font-medium">1</button>
+        <button class="key p-4 m-1 rounded-md hover:bg-gray-300 bg-gray-200 font-medium">2</button>
+        <button class="key p-4 m-1 rounded-md hover:bg-red-300 bg-red-200 font-medium tracking-wider">UNDO</button>
+        <button class="key p-4 m-1 rounded-md hover:bg-gray-300 bg-gray-200 font-medium">3</button>
+        <button class="key p-4 m-1 rounded-md hover:bg-gray-300 bg-gray-200 flex flex-col justify-center items-center uppercase font-medium">4 <span class="text-gray-400 text-sm font-medium">four</span></button>
+        <button class="key p-4 m-1 rounded-md hover:bg-gray-300 bg-gray-200 flex flex-col justify-center items-center uppercase font-medium">6 <span class="text-gray-400 text-sm font-medium">six</span></button>
+        <button class="key p-4 m-1 rounded-md hover:bg-gray-300 bg-gray-200 font-medium tracking-wider">5 , 7</button>
+        <button class="key p-4 m-1 rounded-md hover:bg-gray-300 bg-gray-200 font-medium tracking-wider">WD</button>
+        <button class="key p-4 m-1 rounded-md hover:bg-gray-300 bg-gray-200 font-medium tracking-wider">NB</button>
+        <button class="key p-4 m-1 rounded-md hover:bg-gray-300 bg-gray-200 font-medium tracking-wider">BYE</button>
+        <button class="key p-4 m-1 rounded-md hover:bg-gray-300 bg-gray-200 font-medium tracking-wider">LB</button>
+        <button class="key p-4 m-1 rounded-md hover:bg-red-500 col-span-4 bg-red-400 text-white text-2xl tracking-widest font-semibold">OUT!</button>
+    </div>
+</div>
     <script type="module">
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
